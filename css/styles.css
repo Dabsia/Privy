@@ -11,8 +11,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Mint-Grotesk-Trial;
-    overflow-x: hidden; 
-    overflow-y: hidden;
+    
+    overflow: hidden;
     
 }
 .home__screen{
@@ -201,7 +201,7 @@ h4{
 /* Dummy__chat */
 .second__container{
     width: 35%;
-    height: 90vh;
+    height: 100vh;
     background-color: #0E393A;
     padding: 50px;
     overflow-y: hidden;
