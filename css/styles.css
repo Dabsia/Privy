@@ -309,7 +309,7 @@ width: 150px;
 }
 @media screen and (max-width: 510px){
     body{
-        width: 100wh;
+        width: 100vw;
         overflow-x: hidden;
     }
     main{
