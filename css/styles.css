@@ -12,7 +12,7 @@
     box-sizing: border-box;
     font-family: Mint-Grotesk-Trial;
     overflow-x: hidden; 
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     
 }
 .home__screen{
