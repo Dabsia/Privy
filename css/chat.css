@@ -121,7 +121,7 @@ p{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 58vh;
+    height: 55vh;
 }
 
 .friend__message1, .friend__message2  {
