@@ -1,0 +1,448 @@
+@font-face {
+    font-family:GTWalsheim-bold;
+    src: url(../GTWalsheim/GTWalsheimPro-Black.ttf);
+}
+@font-face {
+    font-family: GTWalsheim-regular;
+    src: url(../GTWalsheim/GTWalsheimPro-RegularOblique.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    overflow-x: hidden; 
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.chat{
+    width: 65%;
+    height: 100vh;
+    padding: 50px;
+    padding-top: 25px;
+    background-color: #e5e5e5;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 15px;
+}
+h1{
+    font-family: GTWalsheim-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    color: #0E393A;
+    margin-bottom: 3px;
+    
+}
+
+p{
+    font-family: GTWalsheim-regular;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 8px;
+
+}
+#user{
+    margin-bottom: 5px;
+}
+.settings__button{
+    font-size: 30px;
+}
+
+.users{
+    position: relative;
+    width: 260px;
+    margin-bottom: 16px;
+}
+.user{
+    border-radius: 50%;
+}
+.user_image2{    
+    position: absolute;
+    left: 35px;
+}
+.user_image3{
+    position: absolute;
+    left: 70px;
+}
+.user_image4{
+    position: absolute;
+    left: 105px;
+}
+.user_image5{
+    position: absolute;
+    left: 140px;
+}
+.user_image6{
+    position: absolute;
+    left: 175px;
+}
+.user_image7{
+    position: absolute;
+    left: 210px;
+    height: 45px;
+    width: 45px;
+}
+.div{
+    position: absolute;
+    color: #fff;
+    bottom: 18px;
+    right: 15px;
+    background-color: transparent;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.user_image{
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 38px;
+}
+
+
+.message__board{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 58vh;
+}
+
+.friend__message1, .friend__message2  {
+    background: rgba(255, 136, 69, 0.1);
+    border-radius: 10px 10px 10px 0px;
+    width: fit-content;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom:25px;
+    display:flex;
+    flex-direction:column;
+    
+    
+}
+.sender__message1, .sender__message2{
+    background: #0E393A;
+    border-radius: 10px 10px 0px 10px;
+    width: fit-content;
+    color: #fff;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    align-self: flex-end;
+    display:flex;
+    flex-direction:column;
+    
+}
+.send_message1, .send_message2{
+    align-self: flex-end;
+    display: flex;
+    margin-bottom:25px;
+    
+}
+.del{
+    height: 15px;
+    width: 15px;
+    align-self: end;
+    margin-left: 6px;
+}
+
+form{
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 60px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-top:10px ;
+    position: relative;
+    margin-top: 20px;
+}
+/* /* .show_icon__image{
+    position: relative;
+    height: 200px;
+    width: fit-content;
+    padding: 20px;
+} */
+.emoji__tray{
+    display: none;
+    position: absolute;
+    bottom: 90px;
+} 
+.emoji{
+    font-size: 25px;
+    background-color: #fff;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+}
+input{
+    border: none;
+    outline: none;
+    display: block;
+    width: 77%;
+    height: 40px;
+    background-color: #fff;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+button{
+    position: absolute;
+    right: 10px;
+    bottom:6px;
+    display: block;
+    outline: none;
+    border: none;
+    background: #FF8845;
+    border-radius: 5px;
+    height: 49px;
+    width: 146px;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+
+}
+p{
+    background-color: transparent;
+    
+}
+.sender{
+    color: #fff;
+    padding: 15px 34px 13px 16px;
+
+}
+.receiver{
+    color: #0E393A;
+    padding: 15px 34px 13px 16px;
+
+}
+small{
+    background-color: transparent;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 9px;
+    color: #FF8845;
+    align-self: flex-end;
+    padding-bottom:8px;
+    padding-right: 13px;
+}
+.time{
+    padding-bottom: 8px;
+}
+/* Advancded settings page */
+.advanced__works{
+    width: 35%;
+    height:100vh;
+    background-color: #fff;
+    padding: 50px;
+}
+
+
+.abb__holder{
+    
+    background-color: transparent;
+    height: 240px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.inner__abb{
+    width: 173px;
+    height: 173px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0E393A;
+    margin: auto;
+}
+#abb{
+    text-align: center;
+    background-color: transparent;
+    color: #FF8845;
+    margin: auto;
+    padding-top: 50px;
+    font-family: GTWalsheim-bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 82px;
+    color: #FF8845;
+
+}
+.group__info__text{
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    border: none;
+    color: #FF8845;
+    padding-top: 30px;
+}
+.group__members__details{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 19px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.online__users, .users__typing, .links__sent{
+    width: 101px;
+    height: 103px;
+    background: rgba(255, 136, 69, 0.1);
+    border-radius: 2px;
+}
+.num{
+    text-align: center;
+    padding-top: 19px;
+}
+.users__{
+    text-align: center;
+    padding-top: 13px;
+}
+.settings{
+        font-family: GTWalsheim-regular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        border: none;
+        color: #FF8845;
+        padding-top: 30px;
+}
+
+
+.toggle {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.hide_chat, .delete__chat{
+    display: flex;
+    justify-content: space-between;
+}
+/* STYLES FOR TOGGLE SWITCH  EFFECT*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 36px;
+	height: 18px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	transition: .6s;
+}
+
+input:checked + label {
+	background: #FF8845;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+/* END OF TOGGLE SWITCH EFFECT */
+
+
+#del_all__chat{
+    margin-left: auto;
+}
+#setInterval{
+    display: flex;
+    
+}
+.hide_sent_chat, .deleteIt, .setInt__text{
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #0E393A;
+    padding-left: 10px;
+}
+
+.SetInterval__Box{
+    padding-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+.addOrminus{
+    display: flex;
+    justify-content: space-between;
+}
+#minus, #plus{
+    height: 20px;
+    width: 20px;
+    background: rgba(255, 136, 69, 0.1);
+    color: #FF8845;
+    text-align: center;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    color: #FF8845;
+    
+}
+#plus{
+    margin-left:9px;
+}
+span{
+    color: #0E393A;
+    font-weight: 800;
+}

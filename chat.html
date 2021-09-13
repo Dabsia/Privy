@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chat page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/chat.css'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <section class="chat">
+            <header>
+                <div class="chat__details">
+                    <h1>Chatroom name</h1>
+                    <p id = 'user'></p>
+                </div>
+                <i class="ri-settings-line settings__button"></i>
+            </header>
+            <div class="user_image">
+                <div class="users">
+                    <img src="./images/Rectangle 6.png" class = 'user_image1 user' alt="user6">
+                    <img src="./images/Rectangle 7.png" class = 'user_image2 user' alt="user7">
+                    <img src="./images/Rectangle 8.png" class = 'user_image3 user' alt="user8">
+                    <img src="./images/Rectangle 9.png" class = 'user_image4 user' alt="user9">
+                    <img src="./images/Rectangle 10.png" class = 'user_image5 user' alt="user10">
+                    <img src="./images/Rectangle 11.png" class = 'user_image6 user' alt="user11">
+                    <img src="./images/Ellipse 3.png" class = 'user_image7 user' alt="user11">
+                    <div class="div">17+</div>
+                </div>
+            </div>
+            <div class="message__board">
+                <div class="friend__message1 messages">
+                    <p class = 'receiver'>Hello, how una de?</p>
+                     <small>10:00 am</small>
+                </div>
+                <div class="send_message1 messages messenger">
+                    <div class="sender__message1 ">
+                        <p class = 'sender'>Omo I de</p>
+                        <small>10:00 am</small>
+                    </div>
+                    <img src="./images/delete.png" id = 'del1' class = 'del' alt="">
+                </div>
+            
+                <div class="friend__message2 messages">
+                    <p class = 'receiver'>So, how did your day go? Trust it went well?</p>
+                    <small>10:00 am</small>  
+                </div>
+
+                <div class="send_message2 messages messenger">
+                    <div class="sender__message2">
+                        <p id = 'sender' class = 'sender'>If not for God, sapa for don kill person</p>
+                        <small class = 'time'>10:00 am</small>
+                    </div>
+                    <img src="./images/delete.png" id = 'del2' class = 'del' alt="">
+                </div>
+            </div>
+
+            <img src="./images/emoji-tray.png" class="emoji__tray" alt="emoji tray">
+            <!-- <div class="show_icon__image">
+                <img src="./images/emoji-tray.png" class = 'emoji__tray'alt="">
+            </div>
+             -->
+                <form action="#" id = 'myForm'>
+                    <i class="ri-emotion-happy-line emoji"></i>
+                    <input type="text" placeholder="Type a message" autofocus autocomplete="off" id = 'message'>
+                    <button type = 'submit'>Send Message</button>
+                </form>
+    
+            
+           
+
+        </section>
+    
+        <section class="advanced__works">
+            <div class="abb__holder">
+                <div class="inner__abb">
+                    <h1 id = 'abb'>CN</h1>
+                </div>
+            </div>
+            <div class="group__info">
+                <h3 class = 'group__info__text'>GROUP INFO</h3>
+                <div class="group__members__details">
+                    <div class="online__users">
+                        <h1 class = 'num'>21</h1>
+                        <p class = 'users__'>Users Online</p>
+                    </div>
+                    <div class="users__typing">
+                        <h1 class = 'num'>5</h1>
+                        <p class = 'users__'>Users Typing</p>
+                    </div>
+                    <div class="links__sent">
+                        <h1 class = 'num'>7</h1>
+                        <p class = 'users__'>Links sent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advanced__functionality">
+                <h3 class = 'settings'>SETTINGS</h3>
+            </div>
+
+            <!-- Toggle switch -->
+            <div class="toggle">
+                <div class="hide_chat">
+                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                    <p class="hide_sent_chat">Hide my chat</p>
+                </div>
+                <div class="delete__chat">
+                    <input type="checkbox" id="del_all__chat" /><label for="del_all__chat">del</label>
+                    <p class = 'deleteIt'>Delete all chat</p>
+                </div>
+               
+            </div>
+            <div class="SetInterval__Box">
+                <div id="setInterval">
+                    <input type="checkbox" id="setInt" /><label for="setInt">del</label>
+                    <p class = 'setInt__text'>Delete after every <span id = 'count'>3</span> seconds</p>
+                </div>
+                <div class="addOrminus">
+                    <p id="minus">-</p>
+                    <p id="plus">+</p>
+                </div>
+            </div>
+            
+            
+        </section>
+    
+    </main>
+
+    <script src='chat.js'></script>
+</body>
+</html>

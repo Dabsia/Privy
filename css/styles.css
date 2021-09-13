@@ -1,0 +1,380 @@
+@font-face {
+    font-family:GTWalsheim-bold;
+    src: url(../GTWalsheim/GTWalsheimPro-Black.ttf);
+}
+@font-face {
+    font-family: GTWalsheim-regular;
+    src: url(../GTWalsheim/GTWalsheimPro-RegularOblique.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Mint-Grotesk-Trial;
+    overflow-x: hidden; 
+    /* overflow-y: hidden; */
+    
+}
+.home__screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.home__screen__text{
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 20px;
+    color: #0E393A;
+    text-align: center;
+}
+.animate__image{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+.app{
+    width: 65%;
+    margin-top: 63px;
+}
+main{
+    /* display: flex; */
+    justify-content: space-between;
+    margin-left:100px ;
+    display: none;
+    
+}
+.logo{
+    margin-bottom: 90px;
+}
+.app__desc{
+    width: 490px;
+    height: 154px;
+    position: relative;
+    margin-bottom:20px ;
+    overflow: hidden;
+}
+.app__desc__text{
+    
+    font-family: GTWalsheim-bold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 73px;
+    color: #0E393A;
+    overflow: hidden;
+}
+span{
+    color: #FF8845;
+    font-family: GTWalsheim-bold;
+}
+.smiley__face{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 48px;
+    width: 48px;
+
+}
+.content{
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    overflow: hidden;
+    margin-bottom: 42px;
+    width: 53%;
+}
+.chat__inputs{
+    display: flex;
+    height: 60px;
+    width: 481px;
+    border-radius: 8px;    
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+input{
+    outline: none;
+    border: none;
+    display: block;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: 500;
+    height: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.39);
+    background-color: #fff;
+    /* fill: none; */
+}
+.chat_name__input{
+    border-left: 1px solid #e5e5e5;
+}
+form{
+    position: relative;
+    width: 481px;
+    margin-left: 7px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+
+}
+button{
+    display: block;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background: #FF8845;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 130px;
+    height: 45px;
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+.talk{
+    margin-top: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #0E393A;
+    font-family: GTWalsheim-regular;
+    margin-bottom: 20px;
+}
+
+.users_display{
+    display: flex;
+}
+.users{
+    position: relative;
+    width: 250px;
+}
+.user{
+    border-radius: 50%;
+}
+.user_image2{    
+    position: absolute;
+    left: 35px;
+}
+.user_image3{
+    position: absolute;
+    left: 70px;
+}
+.user_image4{
+    position: absolute;
+    left: 105px;
+}
+.user_image5{
+    position: absolute;
+    left: 140px;
+}
+.user_image6{
+    position: absolute;
+    left: 175px;
+}
+h4{
+    font-family: GTWalsheim-regular;
+}
+.privy{
+    color: #000000;
+}
+
+/* Dummy__chat */
+.second__container{
+    width: 35%;
+    height: 100vh;
+    background-color: #0E393A;
+    padding: 50px
+    
+}
+.first__box{
+    display: flex;
+    background-color: none;
+    width: 100%;
+}
+.inner__box{
+    background-color: none;
+    margin-left: 25px;
+}
+.circle{
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background-color: rgba(255, 136, 69, 0.21);
+}
+div.big__box{
+    width: 300px;
+    height: 32px;
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+}
+.small__box{
+    
+height: 23px;
+background: rgba(255,255,255,.5);
+border-radius: 5px;
+margin-top: 19px;
+width: 150px;
+
+}
+.straight__line{
+    width: 240px;
+    height: 32px;
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.second__box{
+    margin-top: 75px;
+    display: flex;
+}
+.third__box{
+    display: flex;
+    background-color: none;
+    width: 100%;
+    margin-top: 75px;
+}
+.circular{
+    margin-left: 25px;
+}
+.cont{
+    margin-left: 0;
+}
+
+.move{
+    margin-left: 150px;
+}
+.orange__box{
+    background: #FF8845;
+    border-radius: 8px;
+    width: 100%;
+    height: 157px;
+    margin-top: 85px;
+
+}
+.orange__box__text{
+    font-family: GTWalsheim-regular;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin: auto;
+}
+.download{
+    width: 150px;
+    height: 47px;
+    margin-top: 19px;
+    margin: auto;
+    margin-top: 19px;
+}
+.download__apps{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width:768px){
+    .app{
+        width: 100%;
+    }
+    .second__container{
+        display: none;
+    }
+}
+@media screen and (max-width: 510px){
+    body{
+        width: 100wh;
+        overflow-x: hidden;
+    }
+    main{
+        margin: 30px !important;
+    }
+    .app__desc{
+        width: 100vh;
+        height: 130px;
+        position: relative;
+        margin-bottom:20px ;
+        overflow: hidden;
+    }
+    .logo{
+        margin-bottom: 60px;
+    }
+    .app__desc__text{
+        font-size: 35px;
+        line-height: 53px;
+        width: 60%;
+    }
+    .smiley__face{
+        bottom: 35px;
+        left: 230px;
+        height: 30px;
+        width: 30px;
+    }
+    .content{
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 42px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .chat__inputs{
+
+        height: 60px;
+        width: 100%;
+    }
+    form{
+        width: 90%;
+    }
+    input{
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 10px;
+        width: 50%;
+    }
+    button{
+        display: block;
+        position: absolute;
+        right: 8px;
+        bottom: -20px;
+        background: #FF8845;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        
+        height: 45px;
+        font-family: GTWalsheim-regular;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        z-index: 3;
+        color: #FFFFFF;
+    }
+}
