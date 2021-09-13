@@ -7,6 +7,8 @@ let user = document.getElementById('user');
 
 let message__board = document.querySelector('.message__board')
 
+let delIcon = document.querySelectorAll('.del');
+
 // target the trash elements
 let del1 = document.getElementById('del1');
 let del2 = document.getElementById('del2');
@@ -14,16 +16,9 @@ let sent__message__container1 = document.querySelector('.send_message1');
 let sent__message__container2 = document.querySelector('.send_message2');
 
 // Function to delete the message
-del1.addEventListener('click', delete_chat1)
-del2.addEventListener('click', delete_chat2)
 
 
-function delete_chat1(e){
-    sent__message__container1.style.display = 'none'
-}
-function delete_chat2(e){
-    sent__message__container2.style.display = 'none'
-}
+
 
 // CODE FOR THE EMOJI TRAY
 
@@ -100,7 +95,18 @@ function Send_message(e){
         message__board.appendChild(outer_div);
 
         message.value = ''
+        
+        delIcon = document.querySelectorAll('.del');
+        delIcon.forEach(e => {
+            e.setAttribute('onclick', 'deleteChat(this)')
+        });
 
+        function deleteChat(e) {
+            e.parentElement.remove(e);
+
+        }
+
+            
         isTyping = false
         hide_Mymessage()
         clearChat()
@@ -114,6 +120,20 @@ function Send_message(e){
     }
     
 }
+
+
+
+
+
+delIcon.forEach(e => {
+    e.setAttribute('onclick', 'deleteChat(this)')
+});
+
+function deleteChat(e) {
+    e.parentElement.remove(e);
+
+}
+
 // getting the variables that the user sent in to the Local storage 
 
 
