@@ -147,7 +147,7 @@ function isTyping(){
         user.innerHTML = localStorage.getItem('chat_name') + ' is typing' 
     }
     else{
-        user.innerHTML = user.innerHTML
+        user.innerHTML = ''
     }
 }
 
