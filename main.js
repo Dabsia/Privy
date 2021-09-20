@@ -13,11 +13,10 @@ function submitForm(e){
     if (chat_name.value.length > 0 && room_name.value.length > 0){
         localStorage.setItem('room_name', room_name.value)
         localStorage.setItem('chat_name', chat_name.value)
-        window.location.href = window.location.href.replace('chat.html');      
+        window.location.href += 'chat.html'     
     }else{
         chat_input.style.border = '1px solid red' 
     }
-    
    
 }
 let main = document.querySelector('main')
