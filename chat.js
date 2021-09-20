@@ -243,6 +243,9 @@ function deleteAfterTimeOut(){
             })
         }), (count.innerText*1000))
     }
+    else{
+        clearInterval(deleteAfterTimeOut)
+    }
 }
 
 
