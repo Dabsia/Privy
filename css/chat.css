@@ -113,7 +113,7 @@ p{
 
 .user_image{
     border-bottom: 1px solid #c4c4c4;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
 }
 
 
@@ -268,13 +268,14 @@ small{
     height:100vh;
     background-color: #fff;
     padding: 50px;
+    padding-top: 30px;
 }
 
 
 .abb__holder{
     
     background-color: transparent;
-    height: 240px;
+    height: 230px;
     width: 100%;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -416,7 +417,7 @@ label:active:after {
 }
 
 .SetInterval__Box{
-    padding-top: 34px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
