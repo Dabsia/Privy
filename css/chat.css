@@ -459,6 +459,12 @@ span{
     color: #0E393A;
     font-weight: 800;
 }
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
 
 @media screen and (max-width: 801px) {
     body{
@@ -481,10 +487,18 @@ span{
     }
     .advanced__works{
         display: none;
-        height:100vh;
-        background-color: #fff;
         padding: 20px;
         
     }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 45px;
+        font-size: 20px;
+        border-radius: 50%;
+    }
+
     
 }
