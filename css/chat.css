@@ -462,3 +462,12 @@ span{
     color: #0E393A;
     font-weight: 800;
 }
+
+@media screen and (max-width: 801px) {
+    body{
+        overflow-y: scroll;
+    }
+    .chat{
+        padding: 15px 20px ;
+    }
+}
