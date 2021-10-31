@@ -376,4 +376,7 @@ width: 150px;
         z-index: 3;
         color: #FFFFFF;
     }
+    h4{
+        font-size: 15px;
+    }
 }
