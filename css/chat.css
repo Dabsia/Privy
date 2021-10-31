@@ -187,13 +187,14 @@ form{
     width: fit-content;
     padding: 15px;
     max-width: 300px;
+    background-color: #fff;
 }
 .emoji__tray{
     display: none;
     position: absolute;
     bottom: 120px;
    
-    background-color: #fff;
+
     height: 50px;
     padding: 10px;
     display: none;
