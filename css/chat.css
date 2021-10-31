@@ -284,15 +284,7 @@ small{
     padding: 50px;
     padding-top: 30px;
 }
-.cancel{
-    font-size: 30px;
-}
-.hide_Settings{
-    display: none;
-}
-.like_menu{
-    display: block;
-}
+
 .abb__holder{
     background-color: transparent;
     height: 230px;
@@ -475,4 +467,24 @@ span{
     .chat{
         padding: 15px ;
     }
+    .cancel{
+        font-size: 30px;
+    }
+    main{
+        height: 100vh;
+    }
+    .hide_Settings{
+        display: none;
+    }
+    .like_menu{
+        display: block;
+    }
+    .advanced__works{
+        display: none;
+        height:100vh;
+        background-color: #fff;
+        padding: 20px;
+        
+    }
+    
 }

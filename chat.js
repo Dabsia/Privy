@@ -268,6 +268,7 @@ let advanced_settings = document.getElementById('advanced_works')
 function showSettings(){
     advanced_settings.classList.toggle('like_menu')
     chat.style.display = 'none'
+    main.style.display = 'block'
     advanced_settings.style.display = 'block'
 }
 
@@ -275,8 +276,12 @@ settings.addEventListener('click', showSettings)
 
 // Cancel button
 let cancel = document.querySelector('.cancel')
+let main = document.querySelector('main')
+console.log(main)
 cancel.addEventListener('click', close)
 function close() {
     advanced_settings.style.display = 'none'
+    console.log(main)
+    main.style.display = 'block'
     chat.style.display = 'block'
 }
