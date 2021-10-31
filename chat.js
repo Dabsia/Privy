@@ -281,7 +281,6 @@ console.log(main)
 cancel.addEventListener('click', close)
 function close() {
     advanced_settings.style.display = 'none'
-    console.log(main)
     main.style.display = 'block'
     chat.style.display = 'block'
 }
