@@ -185,7 +185,7 @@ form{
 #emoji_bucket{
     height: fit-content;
     width: fit-content;
-    background-color: #fff;
+    
     padding: 15px;
     max-width: 300px;
 }
