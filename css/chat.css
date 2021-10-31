@@ -185,7 +185,6 @@ form{
 #emoji_bucket{
     height: fit-content;
     width: fit-content;
-    
     padding: 15px;
     max-width: 300px;
 }
@@ -194,7 +193,7 @@ form{
     position: absolute;
     bottom: 120px;
    
-    /* background-color: #fff; */
+    background-color: #fff;
     height: 50px;
     padding: 10px;
     display: none;
