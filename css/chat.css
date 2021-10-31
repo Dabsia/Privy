@@ -284,7 +284,12 @@ small{
     padding: 50px;
     padding-top: 30px;
 }
-
+.cancel{
+    font-size: 30px;
+}
+.hide_Settings{
+    display: none;
+}
 .like_menu{
     display: block;
 }

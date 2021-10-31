@@ -261,12 +261,22 @@ sending_emojis.forEach(emoji => {
 
 
 // To make the settings to show
+let chat = document.querySelector('.chat')
 let settings = document.querySelector('.settings__button')
 let advanced_settings = document.getElementById('advanced_works')
 
 function showSettings(){
     advanced_settings.classList.toggle('like_menu')
+    chat.style.display = 'none'
+    advanced_settings.style.display = 'block'
 }
 
 settings.addEventListener('click', showSettings)
 
+// Cancel button
+let cancel = document.querySelector('.cancel')
+cancel.addEventListener('click', close)
+function close() {
+    advanced_settings.style.display = 'none'
+    chat.style.display = 'block'
+}
