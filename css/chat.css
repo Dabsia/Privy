@@ -17,13 +17,16 @@ body{
     overflow-x: hidden; 
     overflow: hidden;
 }
-
+/* .settings__button{
+    position: absolute;
+    
+} */
 main{
     display: flex;
     justify-content: space-between;
 }
 .chat{
-    width: 65%;
+    width: 100vw;
     height: 100vh;
     padding: 50px;
     padding-top: 25px;
@@ -179,17 +182,28 @@ form{
     position: relative;
     margin-top: 20px;
 }
-/* /* .show_icon__image{
-    position: relative;
-    height: 200px;
+#emoji_bucket{
+    height: fit-content;
     width: fit-content;
-    padding: 20px;
-} */
+    background-color: #fff;
+    padding: 15px;
+    max-width: 300px;
+}
 .emoji__tray{
     display: none;
     position: absolute;
-    bottom: 90px;
+    bottom: 120px;
+   
+    /* background-color: #fff; */
+    height: 50px;
+    padding: 10px;
+    display: none;
 } 
+
+.emojis{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
 .emoji{
     font-size: 25px;
     background-color: #fff;
@@ -264,16 +278,17 @@ small{
 }
 /* Advancded settings page */
 .advanced__works{
-    width: 35%;
+    display: none;
     height:100vh;
     background-color: #fff;
     padding: 50px;
     padding-top: 30px;
 }
 
-
+.like_menu{
+    display: block;
+}
 .abb__holder{
-    
     background-color: transparent;
     height: 230px;
     width: 100%;

@@ -22,19 +22,6 @@ let sent__message__container2 = document.querySelector('.send_message2');
 
 // CODE FOR THE EMOJI TRAY
 
-let emoji__tray = document.querySelector('.emoji__tray')
-
-let emoji = document.querySelector('.emoji')
-emoji.addEventListener('click', showEmoji, false)
-emoji.addEventListener('dblclick', doubleClicked, false)
-
-function showEmoji(){
-    emoji__tray.style.display = 'block'
-}
-function doubleClicked(){
-    emoji__tray.style.display = 'none'
-}
-
 
 // To set the abb of the room name
 // room__name__abb = localStorage.getItem('room_name');
@@ -248,4 +235,38 @@ function deleteAfterTimeOut(){
     }
 }
 
+
+// Add class for that emoji box
+
+let emoji_bucket = document.getElementById('emoji_bucket')
+
+let emoji_icon = document.querySelector('.emoji_icon');
+
+emoji_icon.addEventListener('click', displayEmoji)
+function displayEmoji(){
+    emoji_bucket.classList.toggle('emoji__tray')
+}
+
+
+// Add emojis to the typing  box
+
+let sending_emojis = document.querySelectorAll('.emojis')
+function addItToMessage(emoji) { 
+    message.value += emoji.innerHTML
+    message.focus()
+}
+sending_emojis.forEach(emoji => {
+    emoji.addEventListener('click',() => addItToMessage(emoji))
+})
+
+
+// To make the settings to show
+let settings = document.querySelector('.settings__button')
+let advanced_settings = document.getElementById('advanced_works')
+
+function showSettings(){
+    advanced_settings.classList.toggle('like_menu')
+}
+
+settings.addEventListener('click', showSettings)
 
